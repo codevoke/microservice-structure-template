@@ -1,0 +1,12 @@
+Flask
+
+Flask-SQLAlchemy
+psycopg2-binary
+Flask-Migrate
+
+Flask-RESTful
+Flask-jwt-extended
+passlib
+requests  # optional, for external APIs etc
+
+gunicorn
