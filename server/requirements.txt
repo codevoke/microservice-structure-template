@@ -5,6 +5,7 @@ psycopg2-binary
 Flask-Migrate
 
 Flask-RESTful
+Flask-CORS
 Flask-jwt-extended
 passlib
 requests  # optional, for external APIs etc
