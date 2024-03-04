@@ -2,7 +2,7 @@ from .db import db, BaseModel
 from passlib.hash import pbkdf2_sha256
 
 
-class User(BaseModel): 
+class UserModel(BaseModel): 
     __tablename__ = "user"
 
     id = db.Column(db.Integer, primary_key=True)

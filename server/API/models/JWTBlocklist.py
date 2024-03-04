@@ -4,7 +4,7 @@ from .db import db, BaseModel
 class JWTList(BaseModel):
     __tablename__ = "jwt_list"
 
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     jti = db.Column(db.String(36), nullable=False, primary_key=True)
     is_blocked = db.Column(db.Boolean, default=False, nullable=False)
 

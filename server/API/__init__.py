@@ -1,13 +1,13 @@
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 
-from resources import resources_list
-from models import JWTBlocklist, db_init_app
+from .resources import resource_list
+from .models import JWTBlocklist, db_init_app
 
 
 api = Api(prefix="/api")
 
-for resource in resources_list:
+for resource in resource_list:
     api.add_resource(resource, resource.path)
 
 # configure jwt

@@ -3,8 +3,8 @@ from http import HTTPStatus
 from flask_restful import Resource
 from flask_jwt_extended import get_jwt, get_jwt_identity, jwt_required
 
-from models import DBExceptions as exc
-from models import JWTList
+from API.models import DBExceptions as exc
+from API.models import JWTList
 
 ENDPOINTS = [
     "/logout", 

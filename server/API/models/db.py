@@ -1,17 +1,14 @@
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 
 
 db = SQLAlchemy()
-migrate = Migrate(db)
 
 def db_init_app(app):
     global db, migrate
 
+    db.init_app(app)
     with app.app_context():
         db.create_all()
-
-    migrate.init_app(app)
 
 
 class BaseModel(db.Model):
