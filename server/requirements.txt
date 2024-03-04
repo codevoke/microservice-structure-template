@@ -2,7 +2,6 @@ Flask
 
 Flask-SQLAlchemy
 psycopg2-binary
-Flask-Migrate
 
 Flask-RESTful
 Flask-CORS
