@@ -1,7 +1,7 @@
 from .db import db_init_app
 
 from .User import UserModel, UserExceptions
-from .JWTBlocklist import JWTList, JWTExceptions
+from .JWTList import JWTList, JWTExceptions
 # other models import
 
 
